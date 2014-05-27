@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>ROMPECABEZAS</title>
+		<link rel="icon" href="images/favicon.ico">
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/camera.css">
+		<link rel="stylesheet" href="css/form.css">
+		<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery-migrate-1.1.1.js"></script>
+		<script src="js/superfish.js"></script>
+		<script src="js/forms.js"></script>
+		<script src="js/jquery.ui.totop.js"></script>
+		<script src="js/jquery.equalheights.js"></script>
+		<script src="js/jquery.easing.1.3.js"></script>
+		<script src="js/jquery.ui.totop.js"></script>
+		<script src="js/tms-0.4.1.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('.slider_wrapper')._TMS({
+					show:0,
+					pauseOnHover:false,
+					prevBu:'.prev',
+					nextBu:'.next',
+					playBu:false,
+					duration:600,
+					preset:'fade',
+					pagination:false,//'.pagination',true,'<ul></ul>'
+					pagNums:false,
+					slideshow:3000,
+					numStatus:false,
+					banners: 'fade',
+					waitBannerAnimation:false,
+					progressBar:false
+				});
+			});
+			$(document).ready(function(){
+				!function(){
+			var map=[]
+			 ,names=[]
+			 ,win=$(window)
+			 ,header=$('header')
+			 ,currClass
+			$('.content').each(function(n){
+			 map[n]=this.offsetTop
+			 names[n]=$(this).attr('id')
+			})
+			win
+			 .on('scroll',function(){
+				var i=0
+				while(map[i++]<=win.scrollTop());
+				if(currClass!==names[i-2])
+				currClass=names[i-2]
+				header.removeAttr("class").addClass(names[i-2])
+			 })
+			}(); });
+					function goToByScroll(id){
+				$('html,body').animate({scrollTop: $("#"+id).offset().top},'slow');
+				}
+				$(document).ready(function(){
+					$().UItoTop({ easingType: 'easeOutQuart' });
+				});
+		</script>
+		<!--[if lt IE 8]>
+			<div style=' clear: both; text-align:center; position: relative;'>
+				<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+					<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+				</a>
+			</div>
+		<![endif]-->
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<link rel="stylesheet" media="screen" href="css/ie.css">
+		<![endif]-->
+	</head>
+	<body class="">
+<!--==============================header=================================-->
+		<header class="page1">
+			<div class="container_12">
+				<div class="grid_12">
+					<h1>
+						<a class="logo big-font" href="#" onClick="goToByScroll('page1'); return false;">
+							ROMPECABEZAS
+						</a>
+					</h1>
+					<div class="menu_block">
+						<nav class="">
+							<ul class="sf-menu">
+								<li class="current men"><a onClick="goToByScroll('page1'); return false;" href="#">Inicio </a> <strong class="hover"></strong></li>
+								<li class="men1"><a onClick="goToByScroll('page2'); return false;" href="#">Quiénes somos</a><strong class="hover"></strong></li>
+								<li class=" men2"><a onClick="goToByScroll('page3'); return false;" href="#">Objetivos</a> <strong class="hover"></strong></li>
+								<li class=" men3"><a onClick="goToByScroll('page4'); return false;" href="#">Colabora</a> <strong class="hover"></strong></li>
+								<li class=" men4"><a onClick="goToByScroll('page5'); return false;" href="#">Contacto</a> <strong class="hover"></strong></li>
+							</ul>
+						</nav>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</header>
+<!--=======content================================-->
+		<div id="page1" class="content">
+			<div class="ic">Ayudanos</div>
+			<div class="container_12">
+				<div class="grid_12">
+					<div class="slider_wrapper">
+						<ul class="items">
+							<li>
+								<img src="images/spacer.gif" alt="">
+								<div class="caption banner">
+									<h2>La mayor barrera que tiene una persona con autismo...</h2>
+								</div>
+							</li>
+							<li>
+								<img src="images/spacer.gif" alt="">
+								<div class="caption banner">
+									<h2>es el desconocimiento y los mitos que existen en la sociedad.</h2>
+								</div>
+							</li>
+							<li>
+								<img src="images/spacer.gif" alt="">
+								<div class="caption banner">
+									<h2>Ayudanos!</h2>
+								</div>
+							</li>
+							<li>
+								<img src="images/spacer.gif" alt="">
+								<div class="caption banner">
+									<h2>Unite a ROMPECABEZAS</h2>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<a target="_blank" href="https://www.facebook.com/groups/rompecabeza/" class="facebook">Seguinos en Facebook</a>
+				</div>
+			</div>
+		</div>
+		<div id="page2" class="content">
+			<div class="container_12">
+				<div class="grid_12">
+					<div class="slogan">
+						<h3>Quiénes somos</h3>
+						<div class="text1">
+							Rompecabezas nace de la iniciativa de Luciana Magrini y un grupo de inadaptados, para ayudar a integrar jóvenes y adultos con necesidades especiales a la sociedad a través del deporte.</br></br>
+							Este tipo de inclusión se lleva a cabo con el esfuerzo mancomunado de profesionales, médicos, ayudantes terapéuticos, deportistas, psicólogos,  profesores, abogados, contadores, ingenieros, arquitectos o simplemente con personas con ganas de ayudar, las cuales destinan parte de su tiempo libre en la mejora de la calidad de vida de quien más lo necesita.</br></br>
+							La idea nace para cubrir un nicho existente en la sociedad, donde personas con distintas afecciones como autismo, síndrome down, TGD ( Trastornos Generalizados del Desarrollo), son excluidas de actividades de esparcimientos como el deporte, que podrían realizar con la ayuda y comprensión de todos, privándolos de múltiples beneficios en su desarrollo físico, mental y social.</br></br>
+							Somos una organización sin fines de lucro y estamos completamente comprometidos a ayudar al prógimo dentro de lo que se encuentre a nuestro alcance como profesionales en un ambito de trabajo serio y responsable.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="page3" class="content">
+			<div class="container_12">
+				<div class="grid_12">
+					<div class="slogan">
+						<h3>Nuestros Objetivos</h3>
+						<div class="text1">
+							El objetivo principal es la inclusión del  joven o adulto en una actividad social, y la herramienta para lograrlo es el deporte. No se busca formar un súper atleta, ni un campeón en alguna disciplina.</br></br>
+							Se busca que una persona con afecciones como autismo, síndrome down, TGD ( Trastornos Generalizados del Desarrollo), pueda lograr terminar una actividad atlética por sus propios medios, habiendo disfrutado de la misma y superando sus propios objetivos.</br></br> 
+							Para ellos se recorre un largo camino que incluye la reeducación del individuo, tanto en los físico como en lo mental. De esta manera además se obtienen grandes beneficios en la salud y el desarrollo, produciendo una mejor calidad de vida.</br></br>
+							Una tarea no menos importante y de gran ayuda, es capacitar o instruir a la sociedad dentro de los medios con los que se cuenta para que de esa forma aprendan a aceptar personas distintas con distintas afecciones. De esta manera se podrá realizar un fly-back positivo entre ambas partes que ayuden a formar una mejor sociedad.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="page4" class="content">
+			<div class="container_12">
+				<div class="grid_12">
+					<h3>Colabora con nosotros</h3>
+					<div class="text1">
+						Probablemente la mejor manera de colaborar es conociendo del tema y compartir el conocimiento. Para ello podés empezar leyendo algunos de estos artículos en Internet y por su puesto, si tenés alguna consulta, no dudes en contactarnos.
+					</div>
+				</div>
+				<div class="companies">
+					<div class="grid_3">
+						<img src="images/logo1.jpg" alt="">
+						<div class="text1">Autismo</div>El Autismo es una síndrome genético, que consta en el trastorno psicológico que se caracteriza por la intensa concentración...
+						<br>
+						<a target="_blank" href="http://es.wikipedia.org/wiki/Autismo">Leer más</a>
+					</div>
+					<div class="grid_3">
+						<img src="images/logo2.jpg" alt="">
+						<div class="text1">Asperger</div>Las características esenciales del trastorno de Asperger es una alteración grave y persistente de la interacción...
+						<br>
+						<a target="_blank" href="http://es.wikipedia.org/wiki/S%C3%ADndrome_de_Asperger">Leer más</a>
+					</div>
+					<div class="grid_3">
+						<img src="images/logo3.jpg" alt="">
+						<div class="text1">Qué es TGD</div>Esta categoría debe utilizarse cuando existe una alteración grave y generalizada del desarrollo de la interacción social recíproca...
+						<br>
+						<a target="_blank" href="http://es.wikipedia.org/wiki/Trastorno_generalizado_del_desarrollo">Leer más</a>
+					</div>
+					<div class="grid_3">
+						<img src="images/logo4.jpg" alt="">
+						<div class="text1">Síndrome de Rett</div>El síndrome de Rett es un trastorno en el desarrollo neurológico de base genética. Fue descrito en 1966 por el doctor Andreas Rett...
+						<br>
+						<a target="_blank" href="http://es.wikipedia.org/wiki/S%C3%ADndrome_de_Rett">Leer más</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="page5" class="content">
+			<div class="container_12">
+				<div class="grid_12">
+					<div class="slogan">
+						<h3>Contactanos</h3>
+						<div class="text1">
+							Si querés saber más sobre nuestos proyectos no dudes en contactarnos, tu consulta no nos molesta para nada. También podés unirte a nuestro grupo en Facebook y comartirlo con tus amigos.
+						</div>
+					</br></br>
+						<a target="_blank" href="https://www.facebook.com/groups/rompecabeza/" class="facebook">Seguinos en Facebook</a>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+<!--==============================footer=================================-->
+		<footer>
+			<div class="container_12">
+				<div class="grid_12">
+					<div class="copy">
+						<a class="logo small-font" onClick="goToByScroll('page1'); return false;" href="#">ROMPECABEZAS</a>  &copy; 2014 | <a href="#">Sitio Oficial</a> <br> Administrado por <a href="http://www.instelseguridad.com.ar/" rel="nofollow">Instel&Seguridad</a>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</footer>
+	</body>
+</html>
